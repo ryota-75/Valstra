@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問合せ | 日本拳法 凛道會</title>
+    <meta name="description" content="凛道會へのお問合せ、見学・体験のお申し込みはこちらから。">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003D82',
+                        secondary: '#FF6B35',
+                        background: '#FFFFFF',
+                        card: '#F8F8F8',
+                        text: '#1A1A1A',
+                        muted: '#666666',
+                        border: '#E0E0E0',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        montserrat: ['"Montserrat"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="font-sans text-text antialiased bg-background selection:bg-primary selection:text-white">
+
+    <!-- Section 1 - ナビゲーション -->
+    <header id="header"
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="font-montserrat font-bold text-2xl text-primary tracking-tight">RINDO KAI</span>
+                        <span class="text-xs font-bold tracking-widest text-muted">日本拳法 凛道會</span>
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-secondary font-medium transition-colors">トップ</a>
+                    <a href="introduction.html"
+                        class="text-text hover:text-secondary font-medium transition-colors">道場紹介</a>
+                    <a href="classes.html"
+                        class="text-text hover:text-secondary font-medium transition-colors">クラス・料金</a>
+                    <a href="about.html"
+                        class="text-text hover:text-secondary font-medium transition-colors">日本拳法について</a>
+                    <a href="contact.html" class="text-secondary font-bold transition-colors">お問合せ</a>
+                </nav>
+                <!-- Phone & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="tel:0364111866"
+                        class="hidden md:flex items-center text-primary font-bold hover:text-secondary transition-colors">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                        03-6411-1866
+                    </a>
+                    <a href="contact.html"
+                        class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-primary hover:bg-opacity-90 transition-all duration-300">
+                        体験申し込み
+                    </a>
+                    <button id="mobile-menu-btn" type="button"
+                        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-secondary focus:outline-none">
+                        <span class="sr-only">メニューを開く</span>
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-border absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">トップ</a>
+                <a href="introduction.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">道場紹介</a>
+                <a href="classes.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">クラス・料金</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">日本拳法について</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-secondary bg-card">お問合せ</a>
+                <a href="tel:0364111866" class="block px-3 py-2 text-base font-bold text-primary">
+                    <i data-lucide="phone" class="inline w-4 h-4 mr-2"></i> 03-6411-1866
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="bg-card pt-32 pb-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-primary mb-4 font-montserrat tracking-tight">CONTACT</h1>
+            <p class="text-xl font-bold text-text mb-4">お問合せ・体験予約</p>
+            <p class="text-muted text-sm"><a href="index.html" class="hover:underline">HOME</a> > お問合せ</p>
+        </div>
+    </div>
+
+    <!-- Section 8 - お問合せ -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div class="fade-in">
+                    <span
+                        class="text-secondary font-bold text-sm tracking-widest uppercase mb-2 block">Information</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">お気軽にご相談ください</h2>
+                    <p class="text-muted mb-12 leading-relaxed text-lg">
+                        見学・体験は随時受け付けております。<br>
+                        道場の雰囲気を見てから入会を決めていただけますので、<br>まずはお気軽にお問い合わせください。
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-card rounded-full flex items-center justify-center mr-6 flex-shrink-0 border border-border">
+                                <i data-lucide="phone" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-primary">お電話</h3>
+                                <p class="text-2xl font-bold tracking-widest text-text">03-6411-1866</p>
+                                <p class="text-sm text-muted">受付時間 10:00 - 21:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-card rounded-full flex items-center justify-center mr-6 flex-shrink-0 border border-border">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-primary">アクセス</h3>
+                                <p class="mb-1 text-text">東京都世田谷区祖師谷1-2-3</p>
+                                <p class="text-sm text-muted">小田急線 祖師ヶ谷大蔵駅 徒歩2分</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-card rounded-full flex items-center justify-center mr-6 flex-shrink-0 border border-border">
+                                <i data-lucide="mail" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-primary">メール</h3>
+                                <p class="text-text">info@rindokai.jp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-card rounded-3xl p-8 md:p-10 shadow-soft border border-border fade-in delay-100">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-text mb-2">お名前</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
+                                    placeholder="山田 太郎">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-text mb-2">メールアドレス</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
+                                    placeholder="taro@example.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-bold text-text mb-2">件名</label>
+                            <select id="subject"
+                                class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors appearance-none">
+                                <option>体験コース申し込みについて</option>
+                                <option>入会について</option>
+                                <option>その他のお問い合わせ</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-text mb-2">お問合せ内容</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
+                                placeholder="ご質問などご自由にご記入ください"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-[#002a5c] transition-colors shadow-lg transform hover:-translate-y-1">
+                            送信する
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - 共通 -->
+    <footer class="bg-[#002a5c] text-white pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex flex-col mb-6">
+                        <span class="font-montserrat font-bold text-2xl tracking-tight">RINDO KAI</span>
+                        <span class="text-xs font-bold tracking-widest text-gray-400">日本拳法 凛道會</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-loose max-w-sm">
+                        凛道會は、伝統的な日本拳法の精神を守りながら、現代に適した指導を行う道場です。
+                        心技体の成長を通じて、社会に貢献できる人材を育成します。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-secondary">Menu</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">トップ</a></li>
+                        <li><a href="introduction.html" class="hover:text-white transition-colors">道場紹介</a></li>
+                        <li><a href="classes.html" class="hover:text-white transition-colors">クラス・料金</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">日本拳法について</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">お問合せ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-secondary">Legal & Info</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">特定商取引法に基づく表記</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-xs text-gray-500 text-center md:text-left">
+                    &copy; 2026 Rindo Kai Dojo. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="instagram"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="facebook"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="twitter"
+                            class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
