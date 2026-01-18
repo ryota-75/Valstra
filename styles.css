@@ -99,30 +99,31 @@ nav a:hover::after {
 }
 
 /* Mobile Hero Image Panning Animation */
+/* Mobile Hero Image Panning Animation */
 @keyframes pan-image-mobile {
     0% {
-        transform: scale(1.1) translateX(-3%);
-        /* 左寄り */
+        object-position: 30% 50%;
+        /* 左側を表示 */
     }
 
     100% {
-        transform: scale(1.1) translateX(3%);
-        /* 右寄り */
+        object-position: 70% 50%;
+        /* 右側を表示 */
     }
 }
 
 .animate-pan-mobile {
-    animation: pan-image-mobile 15s ease-in-out infinite alternate;
-    will-change: transform;
-    /* パフォーマンス最適化 */
-    object-position: center;
-    /* 基本は中央 */
+    animation: pan-image-mobile 20s ease-in-out infinite alternate;
+    will-change: object-position;
+    /* モバイルでのデフォルト */
+    transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
     .animate-pan-mobile {
         animation: none;
+        object-position: center;
         transform: scale(1.1);
-        /* PC表示時は拡大のみ */
+        /* PCは1.1倍のみ */
     }
 }
