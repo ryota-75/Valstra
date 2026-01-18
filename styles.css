@@ -101,22 +101,28 @@ nav a:hover::after {
 /* Mobile Hero Image Panning Animation */
 @keyframes pan-image-mobile {
     0% {
-        object-position: 25% 50%;
-        /* 左側を表示 */
+        transform: scale(1.1) translateX(-3%);
+        /* 左寄り */
     }
 
     100% {
-        object-position: 75% 50%;
-        /* 右側を表示（右端のマークが見えない程度で止める） */
+        transform: scale(1.1) translateX(3%);
+        /* 右寄り */
     }
 }
 
 .animate-pan-mobile {
     animation: pan-image-mobile 15s ease-in-out infinite alternate;
+    will-change: transform;
+    /* パフォーマンス最適化 */
+    object-position: center;
+    /* 基本は中央 */
 }
 
 @media (min-width: 768px) {
     .animate-pan-mobile {
         animation: none;
+        transform: scale(1.1);
+        /* PC表示時は拡大のみ */
     }
 }
