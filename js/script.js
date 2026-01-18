@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Mobile Menu Toggle ---
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // Adjust for sticky header height
@@ -79,5 +79,69 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Contact Form Handling (Formspree) ---
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const form = event.target;
+            const data = new FormData(form);
+            const action = form.action;
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            // Disable button during submission
+            submitButton.disabled = true;
+            submitButton.textContent = '送信中...';
+
+            try {
+                const response = await fetch(action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        title: '送信完了！',
+                        text: 'お問い合わせを受け付けました。ありがとうございます。',
+                        icon: 'success',
+                        confirmButtonText: '閉じる',
+                        confirmButtonColor: '#003D82'
+                    });
+                    form.reset();
+                } else {
+                    const jsonData = await response.json();
+                    let errorMessage = "送信に失敗しました。時間をおいて再度お試しください。";
+                    if (Object.hasOwn(jsonData, 'errors')) {
+                        errorMessage = jsonData["errors"].map(error => error["message"]).join(", ");
+                    }
+
+                    Swal.fire({
+                        title: '送信失敗',
+                        text: errorMessage,
+                        icon: 'error',
+                        confirmButtonText: '閉じる',
+                        confirmButtonColor: '#d33'
+                    });
+                }
+            } catch (error) {
+                Swal.fire({
+                    title: 'エラー',
+                    text: '送信エラーが発生しました。インターネット接続を確認してください。',
+                    icon: 'error',
+                    confirmButtonText: '閉じる',
+                    confirmButtonColor: '#d33'
+                });
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = '送信する';
+            }
+        });
+    }
 
 });

@@ -47,6 +47,9 @@
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="font-sans text-text antialiased bg-background selection:bg-primary selection:text-white">
@@ -176,17 +179,17 @@
 
                 <!-- Form -->
                 <div class="bg-card rounded-3xl p-8 md:p-10 shadow-soft border border-border fade-in delay-100">
-                    <form class="space-y-6">
+                    <form id="contact-form" action="https://formspree.io/f/xvzzkorb" method="POST" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-bold text-text mb-2">お名前</label>
-                                <input type="text" id="name"
+                                <input type="text" id="name" name="name" required
                                     class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
                                     placeholder="山田 太郎">
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-bold text-text mb-2">メールアドレス</label>
-                                <input type="email" id="email"
+                                <input type="email" id="email" name="email" required
                                     class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
                                     placeholder="taro@example.com">
                             </div>
@@ -194,17 +197,17 @@
 
                         <div>
                             <label for="subject" class="block text-sm font-bold text-text mb-2">件名</label>
-                            <select id="subject"
+                            <select id="subject" name="subject"
                                 class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors appearance-none">
-                                <option>体験コース申し込みについて</option>
-                                <option>入会について</option>
-                                <option>その他のお問い合わせ</option>
+                                <option value="体験コース申し込みについて">体験コース申し込みについて</option>
+                                <option value="入会について">入会について</option>
+                                <option value="その他のお問い合わせ">その他のお問い合わせ</option>
                             </select>
                         </div>
 
                         <div>
                             <label for="message" class="block text-sm font-bold text-text mb-2">お問合せ内容</label>
-                            <textarea id="message" rows="4"
+                            <textarea id="message" name="message" rows="4" required
                                 class="w-full px-4 py-3 rounded-lg bg-white border border-border focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors"
                                 placeholder="ご質問などご自由にご記入ください"></textarea>
                         </div>
