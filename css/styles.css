@@ -8,16 +8,16 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    background: #ccc; 
+    background: #ccc;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #aaa; 
+    background: #aaa;
 }
 
 /* Utilities not covered by Tailwind config or specific overrides */
@@ -35,7 +35,8 @@ nav a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #FF6B35; /* Secondary Color */
+    background-color: #FF6B35;
+    /* Secondary Color */
     transition: width 0.3s ease;
 }
 
@@ -71,14 +72,58 @@ nav a:hover::after {
 }
 
 /* Delay utilities */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
+}
+
+.delay-500 {
+    transition-delay: 500ms;
+}
 
 /* Image Overlay Gradients */
 /* Ensure text remains readable on images */
 .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile Hero Image Panning Animation */
+/* Mobile Hero Image Panning Animation */
+@keyframes pan-image-mobile {
+    0% {
+        object-position: 30% 50%;
+        /* 左側を表示 */
+    }
+
+    100% {
+        object-position: 70% 50%;
+        /* 右側を表示 */
+    }
+}
+
+.animate-pan-mobile {
+    animation: pan-image-mobile 20s ease-in-out infinite alternate;
+    will-change: object-position;
+    /* モバイルでのデフォルト */
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .animate-pan-mobile {
+        animation: none;
+        object-position: center;
+        transform: scale(1.1);
+        /* PCは1.1倍のみ */
+    }
 }
