@@ -138,47 +138,93 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Campaign Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                 <!-- Campaign 1 -->
                 <div
                     class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-secondary hover:shadow-hover transition-all duration-300 fade-in delay-100">
                     <h3 class="text-xl font-bold text-primary mb-2">① 0円プラン</h3>
-                    <p class="text-sm font-bold text-secondary mb-4">即日入会の方限定！</p>
+                    <p class="text-sm font-bold text-secondary mb-4">即日入会限定！</p>
                     <p class="text-muted leading-relaxed mb-6">
-                        体験コース当日など、即日入会された方は、<br>
-                        <span
-                            class="font-bold text-text underline decoration-secondary decoration-2">入会金・事務手数料・口座振替手数料</span>
-                        が<br>
-                        すべて <span class="text-2xl font-bold text-secondary">0円</span> になります。
+                        入会金・入会手数料・翌月月謝が<br>
+                        すべて <span class="text-2xl font-bold text-secondary">0円</span>。<br>
+                        <span class="text-xs">*さらに口座振替手数料も無料！</span>
                     </p>
-                    <p class="text-xs text-muted text-right">*月謝は発生します</p>
                 </div>
                 <!-- Campaign 2 -->
                 <div
-                    class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-primary hover:shadow-hover transition-all duration-300 fade-in delay-200 transform scale-105 z-10">
-                    <div
-                        class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
-                        Recommended</div>
-                    <h3 class="text-xl font-bold text-primary mb-2">② 同時入会プラン</h3>
-                    <p class="text-sm font-bold text-secondary mb-4">仲間や家族と一緒に！</p>
+                    class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-gray-400 hover:shadow-hover transition-all duration-300 fade-in delay-200">
+                    <h3 class="text-xl font-bold text-primary mb-2">② 紹介割引プラン</h3>
+                    <p class="text-sm font-bold text-secondary mb-4">仲間を誘おう！</p>
                     <p class="text-muted leading-relaxed mb-6">
-                        2人以上で同時に入会されると、<br>
-                        それぞれの月謝から<br>
-                        <span class="text-2xl font-bold text-secondary">1,000円割引</span> (月額/税込)<br>
-                        を適用いたします。
+                        お1人紹介につき、次月の月謝から<br>
+                        <span class="text-2xl font-bold text-secondary">1,000円割引</span> (税込)。
                     </p>
                 </div>
                 <!-- Campaign 3 -->
                 <div
-                    class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-gray-400 hover:shadow-hover transition-all duration-300 fade-in delay-300">
-                    <h3 class="text-xl font-bold text-primary mb-2">③ 紹介プラン</h3>
-                    <p class="text-sm font-bold text-secondary mb-4">輪を広げよう！</p>
+                    class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-primary hover:shadow-hover transition-all duration-300 fade-in delay-300">
+                    <h3 class="text-xl font-bold text-primary mb-2">③ 同時入会プラン</h3>
+                    <p class="text-sm font-bold text-secondary mb-4">家族や友人と一緒に！</p>
                     <p class="text-muted leading-relaxed mb-6">
-                        お一人ご紹介につき、ご紹介者様の月謝から<br>
-                        <span class="text-2xl font-bold text-secondary">1,000円割引</span> (月額/税込)<br>
-                        を適用いたします。
+                        2人以上で同時入会すると、<br>
+                        全員 次月の月謝から<br>
+                        <span class="text-2xl font-bold text-secondary">1,000円割引</span> (税込)。<br>
+                        <span class="text-xs">*ご家族での入会も対象です</span>
                     </p>
-                    <p class="text-xs text-muted text-right">*割引上限はご自身の月謝額内となります</p>
+                </div>
+                <!-- Campaign 4 (Corporate) -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-soft border-t-4 border-gray-800 hover:shadow-hover transition-all duration-300 fade-in delay-400 md:col-span-1">
+                    <h3 class="text-xl font-bold text-primary mb-2">④ 法人団体割引プラン</h3>
+                    <p class="text-sm font-bold text-secondary mb-4">企業の福利厚生に！</p>
+                    <p class="text-muted leading-relaxed mb-4">
+                        入会金・入会手数料無料 + 人数に応じた月謝割引。<br>
+                    </p>
+                    <a href="#corporate-details" class="text-primary font-bold hover:underline text-sm">»
+                        詳細条件・割引額はこちら</a>
+                </div>
+            </div>
+
+            <!-- Corporate Details Section (New) -->
+            <div id="corporate-details" class="bg-gray-50 rounded-2xl p-8 border border-gray-200 fade-in mb-16">
+                <h3 class="text-xl font-bold text-primary mb-6 border-b border-gray-300 pb-2">法人会員詳細</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-text mb-2">■ 法人会員特典</h4>
+                        <ul class="list-disc list-inside text-sm text-muted space-y-1 mb-4">
+                            <li>入会金、入会手数料が無料 <span class="text-xs">(※口座振替手数料500円は必要)</span></li>
+                            <li>会員証提示で入会手数料免除 (3ヶ月以内)</li>
+                            <li><span class="text-xs">※お手続き時に法人印鑑及び法人印鑑証明書をご持参ください</span></li>
+                        </ul>
+
+                        <h4 class="font-bold text-text mb-2">■ 人数別割引額 (1人当たり月謝値引き)</h4>
+                        <ul class="space-y-2 text-sm text-muted">
+                            <li class="flex justify-between border-b border-gray-200 pb-1">
+                                <span>20人プラン (20〜29人)</span> <span class="font-bold text-secondary">1,000円引</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-1">
+                                <span>30人プラン (30〜39人)</span> <span class="font-bold text-secondary">1,500円引</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-1">
+                                <span>40人プラン (40〜49人)</span> <span class="font-bold text-secondary">2,000円引</span>
+                            </li>
+                            <li class="flex justify-between pb-1">
+                                <span>50人プラン (50人以上)</span> <span class="font-bold text-secondary">2,500円引</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-text mb-2">■ 利用制限・注意事項</h4>
+                        <ul class="list-disc list-inside text-xs text-muted space-y-2 leading-relaxed">
+                            <li>引き落とし法人口座が同一の場合に限ります。</li>
+                            <li>通常会員からの切り替えも可能です (割引変更は翌々月から適用)。</li>
+                            <li>0円プランとの併用はできません。</li>
+                            <li>0円プラン利用者が1年以内に法人会員へ切り替える場合、無料となった月謝1ヶ月分の支払いが必要です。</li>
+                            <li>同時入会割引、紹介割引、家族割引との併用はできません。</li>
+                            <li>30日間無料退会保証は利用いただけません。</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,68 +234,96 @@
     <section id="classes" class="py-24 bg-card">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">日本拳法コース 料金・スケジュール</h2>
-                <p class="text-muted">※人数制限あり / 事前予約制 (定員10名)</p>
-                <div class="h-1 w-16 bg-secondary mx-auto mt-6"></div>
+                <span class="inline-block px-4 py-1 bg-primary text-white text-sm font-bold rounded-full mb-4">NEW
+                    PLAN</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">基本料金体系 (VIPプラン)</h2>
+                <p class="text-lg font-bold text-text mb-2">9ROUND0 (通い放題) & 日本拳法 (週2回)</p>
+                <div class="h-1 w-16 bg-secondary mx-auto mt-6 mb-6"></div>
+                <p class="text-muted text-sm">
+                    アメリカ発のサーキットトレーニング「9ROUND」と「日本拳法」が融合した特別プランです。<br>
+                <div class="mt-6">
+                    <a href="https://www.instagram.com/9round_soshigayaokura/" target="_blank" rel="noopener noreferrer"
+                        class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        <i data-lucide="instagram" class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform"></i>
+                        <span class="text-lg">9ROUNDについてはこちら</span>
+                        <i data-lucide="external-link" class="w-4 h-4 ml-2 opacity-80"></i>
+                    </a>
+                </div>
+                </p>
             </div>
 
             <!-- Class Table -->
-            <div class="overflow-hidden rounded-xl shadow-soft border border-border fade-in mb-16">
+            <div class="overflow-hidden rounded-xl shadow-soft border border-border fade-in mb-16 bg-white">
+                <div class="p-4 bg-gray-50 border-b border-border text-center text-xs md:text-sm text-muted">
+                    <span class="font-bold text-primary">定員:</span> 日本拳法 10名 / 9ROUND 9名
+                </div>
                 <table class="min-w-full divide-y divide-border">
-                    <thead class="bg-white">
+                    <thead class="bg-primary text-white">
                         <tr>
-                            <th scope="col"
-                                class="px-6 py-4 text-left text-sm font-bold text-primary uppercase tracking-wider">クラス名
-                            </th>
-                            <th scope="col"
-                                class="px-6 py-4 text-left text-sm font-bold text-primary uppercase tracking-wider">対象
-                            </th>
-                            <th scope="col"
-                                class="px-6 py-4 text-left text-sm font-bold text-primary uppercase tracking-wider">稽古日時
-                            </th>
-                            <th scope="col"
-                                class="px-6 py-4 text-left text-sm font-bold text-primary uppercase tracking-wider">月謝
+                            <th scope="col" class="px-4 py-4 text-left text-sm font-bold uppercase whitespace-nowrap">
+                                カテゴリー</th>
+                            <th scope="col" class="px-4 py-4 text-left text-sm font-bold uppercase min-w-[200px]">プラン内容
+                                (VIP)</th>
+                            <th scope="col" class="px-4 py-4 text-left text-sm font-bold uppercase">日本拳法 稽古日時</th>
+                            <th scope="col" class="px-4 py-4 text-left text-sm font-bold uppercase whitespace-nowrap">月謝
                                 (税込)</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-border">
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text">幼少学生クラス</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-muted">幼児・小学生</td>
-                            <td class="px-6 py-4 text-sm text-muted">
-                                <span class="font-bold block text-text">週2回</span>
-                                月〜土 16:00-16:50<br>
-                                <span class="text-xs text-muted">*希望の2日を選択 (振替可)</span>
+                            <td class="px-4 py-6 whitespace-nowrap text-base font-bold text-primary bg-gray-50/50">幼少学生
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-text">¥8,000</td>
+                            <td class="px-4 py-6 text-sm text-text leading-relaxed">
+                                <div class="flex flex-col gap-2">
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">9ROUND0</span> <span
+                                            class="font-bold text-secondary">無制限</span></span>
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">日本拳法</span> <span
+                                            class="font-bold">週2回</span></span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-6 text-sm text-muted">
+                                <span class="block font-bold text-text mb-1">月〜土 16:00-16:50</span>
+                                <span class="text-xs">*希望の2日を選択 (振替可)</span>
+                            </td>
+                            <td class="px-4 py-6 whitespace-nowrap text-lg font-bold text-secondary">¥8,999</td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text">中高学生クラス</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-muted">中学生・高校生</td>
-                            <td class="px-6 py-4 text-sm text-muted">
-                                <span class="font-bold block text-text">週2回</span>
-                                水・土 17:00-18:30
+                            <td class="px-4 py-6 whitespace-nowrap text-base font-bold text-primary bg-gray-50/50">中高生
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-text">¥10,000</td>
+                            <td class="px-4 py-6 text-sm text-text leading-relaxed">
+                                <div class="flex flex-col gap-2">
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">9ROUND0</span> <span
+                                            class="font-bold text-secondary">無制限</span></span>
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">日本拳法</span> <span
+                                            class="font-bold">週2回</span></span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-6 text-sm text-muted">
+                                <span class="block font-bold text-text mb-1">水・土 17:00-18:30</span>
+                            </td>
+                            <td class="px-4 py-6 whitespace-nowrap text-lg font-bold text-secondary">¥10,999</td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text">一般クラス</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-muted">大学生・社会人</td>
-                            <td class="px-6 py-4 text-sm text-muted">
-                                <span class="font-bold block text-text">週2回</span>
-                                水・土 18:40-20:40
+                            <td class="px-4 py-6 whitespace-nowrap text-base font-bold text-primary bg-gray-50/50">一般
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-text">¥14,000</td>
-                        </tr>
-                        <tr class="hover:bg-gray-50 transition-colors">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text">親子クラス</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-muted">親子ペア</td>
-                            <td class="px-6 py-4 text-sm text-muted">
-                                <span class="font-bold block text-text">週1回</span>
-                                土・日 9:00-9:50<br>
-                                <span class="text-xs text-muted">*希望の1日を選択 (振替不可)</span>
+                            <td class="px-4 py-6 text-sm text-text leading-relaxed">
+                                <div class="flex flex-col gap-2">
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">9ROUND0</span> <span
+                                            class="font-bold text-secondary">無制限</span></span>
+                                    <span class="flex items-center"><span
+                                            class="w-20 font-bold text-gray-500 text-xs">日本拳法</span> <span
+                                            class="font-bold">週2回</span></span>
+                                </div>
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-text">¥15,000</td>
+                            <td class="px-4 py-6 text-sm text-muted">
+                                <span class="block font-bold text-text mb-1">水・土 18:40-20:40</span>
+                            </td>
+                            <td class="px-4 py-6 whitespace-nowrap text-lg font-bold text-secondary">¥14,999</td>
                         </tr>
                     </tbody>
                 </table>
@@ -262,7 +336,7 @@
 
                     <div class="bg-white p-6 rounded-xl border border-border shadow-soft">
                         <h4 class="font-bold text-lg mb-4 flex items-center"><i data-lucide="wallet"
-                                class="mr-2 text-secondary"></i>初期費用</h4>
+                                class="mr-2 text-secondary"></i>初期費用 (共通)</h4>
                         <ul class="space-y-3">
                             <li class="flex justify-between border-b border-gray-100 pb-2">
                                 <span class="text-muted">入会金</span>
@@ -311,7 +385,7 @@
                                 <span class="font-bold">¥1,000</span>
                             </li>
                             <li class="flex justify-between border-b border-gray-100 pb-2">
-                                <span class="text-muted">グローブホルダー</span>
+                                <span class="text-muted">レンタルグローブホルダー</span>
                                 <span class="font-bold">¥1,000</span>
                             </li>
                             <li class="flex justify-between pb-1">
