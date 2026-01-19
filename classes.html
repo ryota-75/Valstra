@@ -252,8 +252,9 @@
                 </p>
             </div>
 
-            <!-- Class Table -->
-            <div class="overflow-hidden rounded-xl shadow-soft border border-border fade-in mb-16 bg-white">
+            <!-- Class Table (Desktop) -->
+            <div
+                class="hidden md:block overflow-hidden rounded-xl shadow-soft border border-border fade-in mb-16 bg-white">
                 <div class="p-4 bg-gray-50 border-b border-border text-center text-xs md:text-sm text-muted">
                     <span class="font-bold text-primary">定員:</span> 日本拳法 10名 / 9ROUND 9名
                 </div>
@@ -327,6 +328,96 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Mobile Card View -->
+            <div class="md:hidden space-y-6 fade-in mb-16">
+                <!-- Info Header -->
+                <div class="p-4 bg-gray-50 border border-border rounded-lg text-center text-xs text-muted mb-4">
+                    <span class="font-bold text-primary">定員:</span> 日本拳法 10名 / 9ROUND 9名
+                </div>
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-soft border border-border overflow-hidden">
+                    <div class="bg-primary px-6 py-4 flex justify-between items-center text-white">
+                        <h3 class="font-bold text-lg">幼少学生</h3>
+                        <span class="font-bold text-xl text-secondary bg-white/10 px-3 py-1 rounded">¥8,999</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">プラン内容 (VIP)</h4>
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">9ROUND0</span>
+                                    <span class="text-sm font-bold text-secondary">無制限</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">日本拳法</span>
+                                    <span class="text-sm font-bold">週2回</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">日本拳法 稽古日時</h4>
+                            <p class="text-sm font-bold text-text mb-1">月〜土 16:00-16:50</p>
+                            <p class="text-xs text-muted text-right">*希望の2日を選択 (振替可)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-soft border border-border overflow-hidden">
+                    <div class="bg-primary px-6 py-4 flex justify-between items-center text-white">
+                        <h3 class="font-bold text-lg">中高生</h3>
+                        <span class="font-bold text-xl text-secondary bg-white/10 px-3 py-1 rounded">¥10,999</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">プラン内容 (VIP)</h4>
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">9ROUND0</span>
+                                    <span class="text-sm font-bold text-secondary">無制限</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">日本拳法</span>
+                                    <span class="text-sm font-bold">週2回</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">日本拳法 稽古日時</h4>
+                            <p class="text-sm font-bold text-text mb-1">水・土 17:00-18:30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-soft border border-border overflow-hidden">
+                    <div class="bg-primary px-6 py-4 flex justify-between items-center text-white">
+                        <h3 class="font-bold text-lg">一般</h3>
+                        <span class="font-bold text-xl text-secondary bg-white/10 px-3 py-1 rounded">¥14,999</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">プラン内容 (VIP)</h4>
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">9ROUND0</span>
+                                    <span class="text-sm font-bold text-secondary">無制限</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
+                                    <span class="text-sm font-bold text-gray-600">日本拳法</span>
+                                    <span class="text-sm font-bold">週2回</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-2">日本拳法 稽古日時</h4>
+                            <p class="text-sm font-bold text-text mb-1">水・土 18:40-20:40</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
