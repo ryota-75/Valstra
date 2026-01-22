@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@700&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS (Play CDN) -->
@@ -58,9 +58,8 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex flex-col">
-                        <span class="font-montserrat font-bold text-2xl text-primary tracking-tight">RINDO KAI</span>
-                        <span class="text-xs font-bold tracking-widest text-muted">日本拳法 凛道會</span>
+                    <a href="index.html" class="flex items-center">
+                        <span class="font-bold text-2xl text-primary tracking-tight">日本拳法 凛道會</span>
                     </a>
                 </div>
                 <!-- Desktop Navigation -->
@@ -68,6 +67,7 @@
                     <a href="index.html" class="text-text hover:text-secondary font-medium transition-colors">トップ</a>
                     <a href="introduction.html"
                         class="text-text hover:text-secondary font-medium transition-colors">道場紹介</a>
+                    <a href="message.html" class="text-text hover:text-secondary font-medium transition-colors">代表挨拶</a>
                     <a href="classes.html"
                         class="text-text hover:text-secondary font-medium transition-colors">クラス・料金</a>
                     <a href="about.html" class="text-secondary font-bold transition-colors">日本拳法について</a>
@@ -99,6 +99,8 @@
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">トップ</a>
                 <a href="introduction.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">道場紹介</a>
+                <a href="message.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">代表挨拶</a>
                 <a href="classes.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">クラス・料金</a>
                 <a href="about.html"
@@ -123,56 +125,76 @@
     </div>
 
     <!-- Section 4 - 道場訓 -->
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section 4 - 道場訓 (Calligraphy Style) -->
+    <section id="about" class="py-24 bg-[#f8f5f2] relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5 pointer-events-none"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">道場訓</h2>
-                <p class="text-muted max-w-2xl mx-auto">私たちが大切にしている5つの精神</p>
-                <div class="h-1 w-16 bg-secondary mx-auto mt-6"></div>
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-8 font-serif"
+                    style="font-family: 'Shippori Mincho', serif;">道 場 訓</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-soft border border-border hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 group fade-in delay-100">
-                    <span
-                        class="block text-4xl font-bold text-gray-200 mb-4 group-hover:text-secondary transition-colors">01</span>
-                    <h3 class="text-xl font-bold text-primary mb-2">礼節</h3>
-                    <p class="text-sm text-muted leading-relaxed">礼に始まり礼に終わる。相手を敬う心を育てます。</p>
+            <!-- Dojo Kun - Horizontal Layout -->
+            <div class="bg-white p-8 md:p-12 shadow-xl border-4 border-double border-gray-200 mx-auto max-w-5xl fade-in"
+                style="font-family: 'Shippori Mincho', serif;">
+
+                <div class="mb-12 text-center">
+                    <span class="block text-xl font-bold tracking-[0.5em] text-primary mb-2">日本拳法 凛道會</span>
                 </div>
-                <!-- Card 2 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-soft border border-border hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 group fade-in delay-200">
-                    <span
-                        class="block text-4xl font-bold text-gray-200 mb-4 group-hover:text-secondary transition-colors">02</span>
-                    <h3 class="text-xl font-bold text-primary mb-2">誠実</h3>
-                    <p class="text-sm text-muted leading-relaxed">自分に嘘をつかず、真摯に取り組む強さを持ちます。</p>
-                </div>
-                <!-- Card 3 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-soft border border-border hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 group fade-in delay-300">
-                    <span
-                        class="block text-4xl font-bold text-gray-200 mb-4 group-hover:text-secondary transition-colors">03</span>
-                    <h3 class="text-xl font-bold text-primary mb-2">忍耐</h3>
-                    <p class="text-sm text-muted leading-relaxed">困難に立ち向かい、諦めない心を養います。</p>
-                </div>
-                <!-- Card 4 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-soft border border-border hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 group fade-in delay-400">
-                    <span
-                        class="block text-4xl font-bold text-gray-200 mb-4 group-hover:text-secondary transition-colors">04</span>
-                    <h3 class="text-xl font-bold text-primary mb-2">勇気</h3>
-                    <p class="text-sm text-muted leading-relaxed">正しいことを行う勇気と、挑戦する心を大切にします。</p>
-                </div>
-                <!-- Card 5 -->
-                <div
-                    class="bg-white p-8 rounded-xl shadow-soft border border-border hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 group fade-in delay-500">
-                    <span
-                        class="block text-4xl font-bold text-gray-200 mb-4 group-hover:text-secondary transition-colors">05</span>
-                    <h3 class="text-xl font-bold text-primary mb-2">感謝</h3>
-                    <p class="text-sm text-muted leading-relaxed">支えてくれる周囲の人々への感謝を忘れません。</p>
+
+                <div class="space-y-8 md:space-y-10">
+                    <div class="flex items-start md:items-center">
+                        <span
+                            class="text-2xl md:text-3xl font-bold text-primary mr-4 md:mr-6 flex-shrink-0 select-none">一、</span>
+                        <p
+                            class="text-lg md:text-2xl tracking-wider leading-relaxed text-text font-medium border-b border-dashed border-gray-200 pb-2 w-full">
+                            我々は礼節を重んじ、師と友を敬い、己を高める努力を怠らぬこと
+                        </p>
+                    </div>
+
+                    <div class="flex items-start md:items-center">
+                        <span
+                            class="text-2xl md:text-3xl font-bold text-primary mr-4 md:mr-6 flex-shrink-0 select-none">一、</span>
+                        <p
+                            class="text-lg md:text-2xl tracking-wider leading-relaxed text-text font-medium border-b border-dashed border-gray-200 pb-2 w-full">
+                            我々は常に人格向上に努めること
+                        </p>
+                    </div>
+
+                    <div class="flex items-start md:items-center">
+                        <span
+                            class="text-2xl md:text-3xl font-bold text-primary mr-4 md:mr-6 flex-shrink-0 select-none">一、</span>
+                        <p
+                            class="text-lg md:text-2xl tracking-wider leading-relaxed text-text font-medium border-b border-dashed border-gray-200 pb-2 w-full">
+                            我々は勝負において、勝ちを驕らず、負けを恥じず真剣に学ぶこと
+                        </p>
+                    </div>
+
+                    <div class="flex items-start md:items-center">
+                        <span
+                            class="text-2xl md:text-3xl font-bold text-primary mr-4 md:mr-6 flex-shrink-0 select-none">一、</span>
+                        <p
+                            class="text-lg md:text-2xl tracking-wider leading-relaxed text-text font-medium border-b border-dashed border-gray-200 pb-2 w-full">
+                            我々は強さを誇らず、正義を貫く者となること
+                        </p>
+                    </div>
+
+                    <div class="flex items-start md:items-center">
+                        <span
+                            class="text-2xl md:text-3xl font-bold text-primary mr-4 md:mr-6 flex-shrink-0 select-none">一、</span>
+                        <p
+                            class="text-lg md:text-2xl tracking-wider leading-relaxed text-text font-medium border-b border-dashed border-gray-200 pb-2 w-full">
+                            我々は謙虚の美徳を忘れることなく自他共栄の精神で社会に貢献すること
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -243,8 +265,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
                     <a href="index.html" class="flex flex-col mb-6">
-                        <span class="font-montserrat font-bold text-2xl tracking-tight">RINDO KAI</span>
-                        <span class="text-xs font-bold tracking-widest text-gray-400">日本拳法 凛道會</span>
+                        <span class="font-bold text-2xl tracking-tight text-white">日本拳法 凛道會</span>
                     </a>
                     <p class="text-gray-400 text-sm leading-loose max-w-sm">
                         凛道會は、伝統的な日本拳法の精神を守りながら、現代に適した指導を行う道場です。
@@ -258,21 +279,22 @@
                         <li><a href="introduction.html" class="hover:text-white transition-colors">道場紹介</a></li>
                         <li><a href="classes.html" class="hover:text-white transition-colors">クラス・料金</a></li>
                         <li><a href="about.html" class="hover:text-white transition-colors">日本拳法について</a></li>
+                        <li><a href="company.html" class="hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="message.html" class="hover:text-white transition-colors">代表挨拶</a></li>
+                        <li><a href="staff.html" class="hover:text-white transition-colors">スタッフ紹介</a></li>
                         <li><a href="contact.html" class="hover:text-white transition-colors">お問合せ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-secondary">Legal & Info</h4>
                     <ul class="space-y-4 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">特定商取引法に基づく表記</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">よくある質問</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="legal.html" class="hover:text-white transition-colors">特定商取引法に基づく表記</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-xs text-gray-500 text-center md:text-left">
-                    &copy; 2026 Rindo Kai Dojo. All rights reserved.
+                &copy; 2026 日本拳法 凛道會. All rights reserved.
                 </p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="instagram"
