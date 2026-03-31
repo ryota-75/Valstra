@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スタッフ紹介 | 日本拳法 凛道會</title>
-    <meta name="description" content="日本拳法 凛道會のスタッフ紹介ページです。ただいま準備中です。">
+    <meta name="description" content="日本拳法 凛道會のスタッフ紹介ページです。中央大学日本拳法部出身の実力派スタッフが丁寧に指導いたします。">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,6 +72,8 @@
                         class="text-text hover:text-secondary font-medium transition-colors">クラス・料金</a>
                     <a href="about.html"
                         class="text-text hover:text-secondary font-medium transition-colors">日本拳法について</a>
+                    <a href="staff.html"
+                        class="text-text hover:text-secondary font-medium transition-colors">スタッフ紹介</a>
                     <a href="contact.html" class="text-text hover:text-secondary font-medium transition-colors">お問合せ</a>
                 </nav>
                 <!-- Phone & Mobile Menu Button -->
@@ -105,6 +107,8 @@
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">クラス・料金</a>
                 <a href="about.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">日本拳法について</a>
+                <a href="staff.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">スタッフ紹介</a>
                 <a href="contact.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-text hover:text-secondary hover:bg-card">お問合せ</a>
                 <a href="tel:0364111866" class="block px-3 py-2 text-base font-bold text-primary">
@@ -123,16 +127,156 @@
         </div>
     </div>
 
-    <!-- Main Content -->
-    <section class="py-32 bg-white text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-200 mb-6 font-montserrat tracking-widest">COMING SOON
-            </h2>
-            <p class="text-xl text-muted mb-12">スタッフ紹介ページは現在準備中です。<br>公開まで今しばらくお待ちください。</p>
-            <a href="index.html"
-                class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-opacity-90 transition-all duration-300">
-                ホームに戻る
-            </a>
+    <!-- Main Content - スタッフ紹介 -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-secondary font-bold text-sm tracking-widest uppercase mb-2 block">Our Team</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">指導スタッフ</h2>
+                <div class="h-1 w-16 bg-secondary mx-auto mt-6 mb-6"></div>
+                <p class="text-muted max-w-2xl mx-auto">
+                    全員が中央大学日本拳法部出身の実力派。<br>
+                    全国大会での入賞経験豊富なスタッフが丁寧に指導いたします。
+                </p>
+            </div>
+
+            <!-- スタッフカード -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- 松本 鼓大 -->
+                <div class="group fade-in delay-100">
+                    <div class="relative rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-500 mb-6">
+                        <!-- ユニフォーム写真（通常） -->
+                        <img src="images/matsumoto_uniform.JPG" alt="松本 鼓大 - ユニフォーム"
+                            class="w-full aspect-[3/4] object-cover object-top transition-opacity duration-500 group-hover:opacity-0">
+                        <!-- 日本拳法着写真（ホバー時） -->
+                        <img src="images/matsumoto_kenpo.JPG" alt="松本 鼓大 - 日本拳法"
+                            class="w-full aspect-[3/4] object-cover object-top absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <!-- 段位バッジ -->
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">参段</span>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-2xl font-bold text-primary mb-1">松本 鼓大</h3>
+                        <p class="text-sm text-secondary font-bold">Kodai Matsumoto</p>
+                        <p class="text-xs text-muted mt-1">中央大学 日本拳法部 主将</p>
+                    </div>
+                    <!-- 戦績 -->
+                    <div class="bg-card rounded-xl p-5 border border-border">
+                        <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-3 flex items-center">
+                            <i data-lucide="trophy" class="w-4 h-4 mr-2 text-secondary"></i>主な戦績
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥉</span>
+                                <span>2021年度 全国高等学校日本拳法選抜大会 <span class="font-bold text-primary">第3位</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥇</span>
+                                <span>2022年度 全国大学拳法選手権大会 <span class="font-bold text-secondary">優勝</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥇</span>
+                                <span>2024年度 兵庫県日本拳法選手権 <span class="font-bold text-secondary">優勝</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 木谷 心咲 -->
+                <div class="group fade-in delay-200">
+                    <div class="relative rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-500 mb-6">
+                        <img src="images/kitani_uniform.JPG" alt="木谷 心咲 - ユニフォーム"
+                            class="w-full aspect-[3/4] object-cover object-top transition-opacity duration-500 group-hover:opacity-0">
+                        <img src="images/kitani_kenpo.JPG" alt="木谷 心咲 - 日本拳法"
+                            class="w-full aspect-[3/4] object-cover object-top absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">参段</span>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-2xl font-bold text-primary mb-1">木谷 心咲</h3>
+                        <p class="text-sm text-secondary font-bold">Misaki Kitani</p>
+                        <p class="text-xs text-muted mt-1">中央大学 拳法部 2026年卒</p>
+                    </div>
+                    <div class="bg-card rounded-xl p-5 border border-border">
+                        <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-3 flex items-center">
+                            <i data-lucide="trophy" class="w-4 h-4 mr-2 text-secondary"></i>主な戦績
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥉</span>
+                                <span>2025年度 全日本体重別選手権大会 <span class="font-bold text-primary">第3位</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥇</span>
+                                <span>第38回 東日本大学リーグ戦 <span class="font-bold text-secondary">優勝</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥈</span>
+                                <span>第38回 全国大学選抜選手権大会 <span class="font-bold text-primary">準優勝</span><span class="text-xs text-muted ml-1">(技能賞)</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥇</span>
+                                <span>第36回 東日本大学選手権大会 <span class="font-bold text-secondary">優勝</span><span class="text-xs text-muted ml-1">(最優秀賞)</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥈</span>
+                                <span>東日本女子団体選手権 <span class="font-bold text-primary">準優勝</span><span class="text-xs text-muted ml-1">(技能賞)</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 近藤 鳳斗 -->
+                <div class="group fade-in delay-300">
+                    <div class="relative rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-500 mb-6">
+                        <img src="images/kondo_uniform.JPG" alt="近藤 鳳斗 - ユニフォーム"
+                            class="w-full aspect-[3/4] object-cover object-top transition-opacity duration-500 group-hover:opacity-0">
+                        <img src="images/kondo_kenpo.JPG" alt="近藤 鳳斗 - 日本拳法"
+                            class="w-full aspect-[3/4] object-cover object-top absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">参段</span>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-2xl font-bold text-primary mb-1">近藤 鳳斗</h3>
+                        <p class="text-sm text-secondary font-bold">Taketo Kondo</p>
+                        <p class="text-xs text-muted mt-1">中央大学 拳法部 2027年卒見込み</p>
+                    </div>
+                    <div class="bg-card rounded-xl p-5 border border-border">
+                        <h4 class="text-xs font-bold text-muted uppercase tracking-wider mb-3 flex items-center">
+                            <i data-lucide="trophy" class="w-4 h-4 mr-2 text-secondary"></i>主な戦績
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥈</span>
+                                <span>2024年5月 第37回 東日本大学リーグ戦 <span class="font-bold text-primary">準優勝</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🏅</span>
+                                <span>2024年6月 矢野杯 第37回 東日本学生個人選手権 級の部 <span class="font-bold text-primary">ベスト4</span></span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <span class="text-secondary font-bold mr-2 mt-0.5 shrink-0">🥈</span>
+                                <span>2025年5月 第38回 東日本大学リーグ戦 <span class="font-bold text-primary">準優勝</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-20 fade-in">
+                <p class="text-muted mb-6">スタッフ一同、皆さまのお越しを心よりお待ちしております。</p>
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center px-10 py-4 bg-primary text-white font-bold rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                    体験・見学のお申し込み
+                </a>
+            </div>
         </div>
     </section>
 
